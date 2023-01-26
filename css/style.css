@@ -5,3 +5,18 @@ body {
 h1 {
     color: #7e8997;
 }
+
+.my-background {
+    background-color: #f8f9fa;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.my-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-widht {
+    width: 300px;
+}

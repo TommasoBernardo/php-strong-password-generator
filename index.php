@@ -21,22 +21,41 @@ if (isset($_GET['passwordLength'])) {
 
 <body>
     <main>
-        <div class="container">
+        <div class="container my-radius">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <h1 class="text-center mb-5">
+                    <h1 class="text-center mt-5 ">
                         <strong>
                             Strong Password Generator
                         </strong>
                     </h1>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2 class="text-white text-center mb-5">
+                        <strong>
+                            Genera una password sicura
+                        </strong>
+                    </h2>
+                </div>
+            </div>
         </div>
-        <form method="GET" action="./index.php">
-            <label for="password" class="text-white">Inserisci la lunghezza della password</label>
-            <input type="number" name="passwordLength" id="password">
-            <button type="submit">Genera</button>
-        </form>
+        <div class="container my-background">
+            <form method="GET" action="./index.php">
+                <div class="container text-center my-flex">
+                    <label class="mt-5" for="password">Lunghezza password:</label>
+                    <input class="mt-5 my-widht" type="number" name="passwordLength" id="password">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-8">
+                            <button class="btn btn-primary mt-5" type="submit">invia</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
 </body>
 
